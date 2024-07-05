@@ -3,6 +3,11 @@ variable "project" {
 }
 
 # variable "credentials_file" {}
+variable "gcp_credentials" {
+  type = string
+  sensitive = true
+  description = "Google Cloud personal credentials"
+}
 
 variable "region" {
   default = "asia-east1"
